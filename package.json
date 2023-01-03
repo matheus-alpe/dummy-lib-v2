@@ -1,0 +1,45 @@
+{
+  "name": "@matheus-alpe/dummy-lib-v2",
+  "version": "1.0.2",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "clear": "rm -rf node_modules yarn.lock dist package-lock.json pnpm-lock.yaml",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "dependencies": {
+    "vue": "^2.7.14",
+    "vue2-teleport": "^1.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.7",
+    "@senojs/rollup-plugin-style-inject": "^0.2.3",
+    "@storybook/addon-actions": "^6.5.15",
+    "@storybook/addon-essentials": "^6.5.15",
+    "@storybook/addon-interactions": "^6.5.15",
+    "@storybook/addon-links": "^6.5.15",
+    "@storybook/builder-vite": "^0.2.6",
+    "@storybook/testing-library": "^0.0.13",
+    "@storybook/vue": "^6.5.15",
+    "@vitejs/plugin-vue2": "^2.2.0",
+    "babel-loader": "^8.3.0",
+    "prettier": "^2.7.1",
+    "vite": "^4.0.0",
+    "vue-loader": "^15.10.1"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/dummy-lib.umd.js",
+  "module": "./dist/dummy-lib.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/dummy-lib.es.js",
+      "require": "./dist/dummy-lib.umd.js"
+    }
+  },
+  "license": "MIT"
+}
