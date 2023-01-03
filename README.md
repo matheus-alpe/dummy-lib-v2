@@ -21,9 +21,3 @@ yarn dev
 ```sh
 yarn build
 ```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-yarn lint
-```
